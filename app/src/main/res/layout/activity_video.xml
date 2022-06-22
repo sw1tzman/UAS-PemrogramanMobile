@@ -27,11 +27,13 @@
 
     <ToggleButton
         android:id="@+id/toggle_Favorite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="88dp"
+        android:layout_height="86dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
-        android:text="ToggleButton"
+        android:background="@drawable/toggle_fav"
+        android:textOff=" "
+        android:textOn=" "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_DetailJudulVideo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

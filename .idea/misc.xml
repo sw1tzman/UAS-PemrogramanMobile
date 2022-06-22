@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Alvin/Ma Chung/Smt 6/Pemrograman Mobile/UAS-PemrogramanMobile/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1235" />
+        <entry key="..\:/Alvin/Ma Chung/Smt 6/Pemrograman Mobile/UAS-PemrogramanMobile/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.1235" />
+        <entry key="..\:/Alvin/Ma Chung/Smt 6/Pemrograman Mobile/UAS-PemrogramanMobile/app/src/main/res/drawable/toggle.xml" value="0.1235" />
+        <entry key="..\:/Alvin/Ma Chung/Smt 6/Pemrograman Mobile/UAS-PemrogramanMobile/app/src/main/res/drawable/toggle_fav.xml" value="0.1235" />
         <entry key="..\:/Alvin/Ma Chung/Smt 6/Pemrograman Mobile/UAS-PemrogramanMobile/app/src/main/res/layout/activity_favorite.xml" value="0.22826086956521738" />
         <entry key="..\:/Alvin/Ma Chung/Smt 6/Pemrograman Mobile/UAS-PemrogramanMobile/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Alvin/Ma Chung/Smt 6/Pemrograman Mobile/UAS-PemrogramanMobile/app/src/main/res/layout/activity_video.xml" value="0.22826086956521738" />
