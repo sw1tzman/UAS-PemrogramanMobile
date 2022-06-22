@@ -6,11 +6,13 @@ import androidx.lifecycle.ViewModelProvider;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 import android.widget.VideoView;
 
 import com.example.myapplication.R;
+import com.example.myapplication.database.Favorite;
 import com.example.myapplication.viewmodel.FavoriteViewModel;
 import com.example.myapplication.viewmodel.ViewModelFactory;
 
@@ -35,6 +37,8 @@ public class VideoActivity extends AppCompatActivity {
 
     private void configVideo() {
         String judulVideo = getIntent().getStringExtra("JUDUL_VIDEO");
+        TextView txtJudul = findViewById(R.id.txt_DetailJudulVideo);
+        txtJudul.setText(judulVideo);
         VideoView videoView = findViewById(R.id.vv_Video);
         if(judulVideo.equals("video1")){
             videoView.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.video1));
@@ -56,5 +60,13 @@ public class VideoActivity extends AppCompatActivity {
             _isChecked = true;
         }
         btnFav.setChecked(_isChecked);
+        boolean final_isChecked = _isChecked;
+        btnFav.setOnClickListener(View -> {
+            if(final_isChecked){
+                favoriteViewModel.delete(judulVideo);
+            }else{
+                favoriteViewModel.insert(new Favorite(judulVideo));
+            }
+        });
     }
 }

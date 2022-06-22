@@ -13,7 +13,7 @@ public interface FavoriteDAO {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     void insertFav(Favorite favorite);
 
-    @Query("SELECT * FROM favorite ORDER BY id ASC")
+    @Query("SELECT * FROM favorite")
     LiveData<List<Favorite>> getFavoriteVideo();
 
     @Query("DELETE FROM favorite WHERE favorite.judulVideo = :judulVideo")
